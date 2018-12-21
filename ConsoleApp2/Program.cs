@@ -5,13 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2//test
+namespace ConsoleApp2
 {
     public class Initializer : DropCreateDatabaseIfModelChanges<Context>
     {
         protected override void Seed(Context context)
         {
-            //aaaaaa
             context.PayWays.AddRange(new List<PayWay>
         {
             new PayWay{Name = "支付宝"},
